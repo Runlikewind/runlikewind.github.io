@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>医师节</title>
+    <link rel="stylesheet" href="./prd/styles/index.css" />
+    <style>
+        html, body, div, input, button, header, h2, span {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            font-size: 62.5%;
+            font-family: "SourceHanSansSC Medium", "Microsoft Yahei", 微软雅黑, 宋体, STHeiti, "Hiragino Mincho ProN", serif;
+        }
+        .app {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .index-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url(./doctor.jpg) no-repeat 0 0;
+            background-size: 100%;
+        }
+        .blessing {
+            position: absolute;
+            top: 51%;
+            left: 0;
+            right: 0;
+            width: 64%;
+            margin: auto;
+        }
+        .blessing .name {
+            width: 50px;
+            height: 20px;
+            line-height: 20px;
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+            font-size: 1rem;
+            color: #ff0;
+            border-bottom: 1px solid #fff;
+            /*display: block;*/
+        }
+        .blessing-cont {
+            height: 36px;
+            line-height: 36px;
+            background-color: #03544d;
+            font-size: 1rem;
+            color: #fff;
+            text-align: center;
+        }
+        .blessing-btn {
+            position: absolute;
+            top: 63%;
+            left: 0;
+            right: 0;
+            width: 84px;
+            height: 35px;
+            margin: auto;
+            background-color: #01534d;
+            border: 1px solid #01534d;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #fff;
+        }
+        .image {
+            display: none;
+        }
+        .blessing-hd {
+            height: 42px;
+            line-height: 42px;
+            background-color: #01534d;
+            text-align: center;
+            color: #fff;
+        }
+        .back {
+            margin-left: 10px;
+            float: left;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="index" class="app">
+        <div class="index-container">
+            <div class="blessing">
+                <p class="blessing-cont">祝福 <input class="name" type="text"> 医生喜乐安康</p>
+            </div>
+            <button class="blessing-btn">祝福 TA</button>
+        </div>
+    </div>
+    <div id="blessing" class="app image">
+        <header class="blessing-hd">
+            <span class="back">返回</span>
+            <h2>长按图片进行分享</h2>
+        </header>
+        <div class="cont">
+            <img class="blessing-img" src="" alt="祝福图">
+        </div>
+    </div>
+    <script src="//cdn.bootcss.com/zepto/1.2.0/zepto.js"></script>
+    <script src="./prd/scripts/index.js"></script>
+</body>
+</html>
